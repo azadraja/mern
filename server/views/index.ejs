@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the United Federation of Planets!</h1>
+    <form action="/createCaptain" method="POST">
+        <label for="name">Captain Name</label>
+        <input type="text" id="name" name="name" />
+        <label for="ship">Captain's Ship</label>
+        <input type="text" id="ship" name="ship" />
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>O'Captain, My Captains</h1>
+    <ul>
+    <% captains.forEach(e => { %>
+        <li><%= e.name %></li>
+    <% }) %>
+    </ul>
+</body>
+</html>
